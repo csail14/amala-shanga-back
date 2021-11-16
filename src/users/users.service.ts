@@ -30,16 +30,6 @@ export class UsersService {
     return this.users.save(user);
   }
 
-  // async create(data: CreateUserDto) {
-  //   const user = this.users.create(data);
-  //   await this.users.save(data);
-  //   return user;
-  // }
-
-  // create(user: CreateUserDto) {
-  //   this.users = [...this.users, user as Users];
-  // }
-
   // update(id: string, user: CreateUserDto) {
   //   const userToUpdate = this.users.find((item) => item.id === +id);
   //   if (!userToUpdate) {
