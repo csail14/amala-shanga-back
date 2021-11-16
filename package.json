@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "engines": {
-    "node": "14.16.0"
+    "node": "14.16.0",
+    "npm": "6.14.11"
   },
   "scripts": {
     "prebuild": "rimraf dist",
@@ -21,7 +22,8 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "postinstall": "tsc — sourceMap false"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",
