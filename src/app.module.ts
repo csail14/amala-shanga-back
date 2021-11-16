@@ -27,7 +27,7 @@ const port = process.env.PORT || config.db.port;
       username: user,
       password: password,
       database: database,
-      autoLoadEntities: true,
+      entities: [User],
       synchronize: true,
     }),
     UsersModule,
