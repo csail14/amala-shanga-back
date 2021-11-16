@@ -11,7 +11,7 @@ if (!process.env.HOST_DB) {
 }
 
 import { UsersModule } from './users/users.module';
-
+console.log('env', process.env);
 const host = process.env.HOST_DB || config.db.host;
 const database = process.env.DATABASE_DB || config.db.database;
 const user = process.env.USER_DB || config.db.user;
